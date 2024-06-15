@@ -49,7 +49,7 @@ def extract_models_and_pipelines(pages=5):
     return models_data
 
 
-def save_to_csv(data, filename='/Users/adekunleajibode/Desktop/cisc_877_doc/models_data_it_may_not_work.csv'):
+def save_to_csv(data, filename='/home/local/SAIL/aajibode/paper_2/all_models.csv'):
     df = pd.DataFrame(data)
     df.to_csv(filename, index=False)
     print(f"Data saved to {filename}")
